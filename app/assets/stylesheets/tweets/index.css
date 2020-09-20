@@ -1,9 +1,20 @@
 .wrapper {
   display: flex;
 }
-
-.side-bar {
+.side-view {
+  background-color: rgb(73, 122, 167);
+  height: 100vh;
+  width: 300px;
 }
 
 .main-view {
+  background-color: darkblue;
+  height: 100vh;
+  width: calc(100% - 600px);
+}
+
+.runking-view {
+  background-color: rgb(73, 122, 167);
+  height: 100vh;
+  width: 300px;
 }
