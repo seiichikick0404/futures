@@ -19,6 +19,7 @@
 }
 
 .top-header {
+  position: relative;
   height: 100px;
   background-color: #FAFAFA;
   display: flex;
@@ -32,8 +33,35 @@
   margin-left: 14px;
 }
 
+.lists-menu {
+  margin-right: 25px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.header-lists {
+  background-color: aliceblue;
+  width: 150px;
+  position: absolute;
+  top: 80px;
+  left: 700px;
+  padding: 20px;
+}
+
+.header-lists li {
+  margin-bottom: 10px;
+}
+
+.header-lists a {
+  color: black;
+}
+
 .runking-view {
   background-color: azure;
   height: 100vh;
   width: 300px;
+}
+
+.hidden {
+  display: none;
 }
