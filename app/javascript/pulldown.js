@@ -1,4 +1,4 @@
-window.addEventListener('load', function(){
+function pullDown() {
 
   const pullDownButton = document.getElementById('lists')
   const pullDownLists = document.getElementById('pull-down')
@@ -20,4 +20,5 @@ window.addEventListener('load', function(){
       pullDownLists.setAttribute("style", "display:block;")
     }
   })
-})
+}
+window.addEventListener('load', pullDown)
