@@ -4,7 +4,9 @@
    <% if user_signed_in? %>
     <li><%= link_to "ログアウト", "#" %></li>
     <li><%= link_to "マイページ", "#" %></li>
+  </ul>
    <% else %>
+  <ul class="header-lists hidden" id="pull-down">
     <li><%= link_to "新規登録", new_user_registration_path %></li>
     <li><%= link_to "ログイン", new_user_session_path %></li>
   </ul>
