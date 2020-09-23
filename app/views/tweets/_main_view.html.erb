@@ -1,12 +1,14 @@
 <div class="top-header">
   <h1 class="header-title">futures</h1>
   <ul class="header-lists hidden" id="pull-down">
-    <li><%= link_to "新規登録", new_user_registration_path %></li>
-    <li><%= link_to "ログイン", new_user_session_path %></li>
+   <% if user_signed_in? %>
     <li><%= link_to "ログアウト", "#" %></li>
     <li><%= link_to "マイページ", "#" %></li>
-    
+   <% else %>
+    <li><%= link_to "新規登録", new_user_registration_path %></li>
+    <li><%= link_to "ログイン", new_user_session_path %></li>
   </ul>
+   <% end %>
   <div class="lists-menu" id="lists">menu
   </div>
 </div>
