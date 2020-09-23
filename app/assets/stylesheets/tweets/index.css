@@ -10,8 +10,20 @@
 .left-header {
   height: 100px;
   background-color: #dbc3c3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.user-info {
+  display: flex;
 }
 
+.user-info a {
+  margin-right: 100px;
+  color: black;
+  font-size: 23px;
+  font-weight: bold;
+}
 
 .main-view {
   background-color: #ffffff;
