@@ -1,0 +1,19 @@
+.sub-header {
+  width: 100%;
+  height: 100px;
+  background-color: #e0cece;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sub-title {
+  font-size: 50px;
+  font-family:'Sacramento', cursive;
+  margin-left: 23px;
+}
+
+.sub-title a {
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,58 @@
+.all-contents {
+  display: flex;
+}
+
+.sign-left-bar {
+  height: 100vh;
+  width: 300px;
+  background-color: #FAFAFA;
+}
+
+.contents-row {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: calc(100% - 600px);
+}
+
+.container {
+  margin: 20px 0;
+  padding: 30px;
+  height: calc(100% - 200px);
+  width: calc(100% - 200px);
+  box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
+  background-color: #FAFAFA;
+  box-sizing: border-box;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+}
+
+.field {
+  padding-right: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin: 5px 0 15px;
+  padding: 10px;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+  font-family: "游ゴシック", "YuGothic";
+}
+
+form input[type="submit"] {
+  background-color: #57C3E9;
+  border-radius: 20px;
+  color: #fff;
+  border: 0;
+  font-size: 18px;
+}
+
+.sign-right-bar {
+  height: 100vh;
+  width: 300px;
+  background-color: #FAFAFA;
+}
