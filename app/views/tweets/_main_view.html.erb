@@ -2,15 +2,14 @@
   <h1 class="header-title">futures</h1>
   <ul class="header-lists hidden" id="pull-down">
    <% if user_signed_in? %>
-    <li><%= link_to "ログアウト", "#" %></li>
+    <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "destroy" %></li>
     <li><%= link_to "マイページ", "#" %></li>
-  </ul>
    <% else %>
-  <ul class="header-lists hidden" id="pull-down">
-    <li><%= link_to "新規登録", new_user_registration_path %></li>
-    <li><%= link_to "ログイン", new_user_session_path %></li>
-  </ul>
+    <li><%= link_to "新規登録", new_user_registration_path, class: "signup" %></li>
+    <li><%= link_to "ログイン", new_user_session_path, class: "signin" %></li>
    <% end %>
+  </ul>
+   
   <div class="lists-menu" id="lists">menu
   </div>
 </div>
