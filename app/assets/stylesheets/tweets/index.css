@@ -25,6 +25,12 @@
   font-weight: bold;
 }
 
+.left-stack {
+  height: 200px;
+  width: 100%;
+}
+
+
 .main-view {
   background-color: #ffffff;
   height: 100vh;
