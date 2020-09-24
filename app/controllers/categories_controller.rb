@@ -1,14 +1,16 @@
 class CategoriesController < ApplicationController
-  def index
-    @categories = Category.all
-  end
+  # def index
+  #   @categories = Category.all
+  # end
   
-  def new
-    @categories = Category.new
-  end
 
-  def create(category_params)
-    Category.create
+  def create
+    if @category = Category.new(category_params)
+      @category.save
+      redirect_to  controller: :tweets, action: :index
+    else 
+      render template: 'tweets/index'
+    end
   end
 
   private

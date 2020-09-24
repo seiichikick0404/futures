@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+#   アソシエーション
+  has_many :tweets
+  has_many :categories
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,

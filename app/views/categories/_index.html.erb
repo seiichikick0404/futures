@@ -1,1 +1,7 @@
-task一覧
+<div class="task-lists">
+  <% @categories.each do |category| %>
+    <ul class="task-list">
+      <li><%= category.task %></li>
+    </ul>
+  <% end %>
+</div>

@@ -2,6 +2,8 @@ class TweetsController < ApplicationController
   before_action :move_to_sign_in, except: [:index]
 
   def index
+    @categories = Category.all
+    @category = Category.new
   end
 
   def new

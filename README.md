@@ -38,7 +38,7 @@ Things you may want to cover:
 ## アソシエーション
 has_many :comments
 has_many :tweets
-has_many :categorys
+has_many :categories
 
 
 
@@ -55,5 +55,5 @@ has_many :categorys
 
 ## アソシエーション
 has_many :comments
-has_many :categorys
+has_many :categories
 belongs_to :user
