@@ -2,6 +2,7 @@
   <h1 class="header-title">futures</h1>
   <ul class="header-lists hidden" id="pull-down">
    <% if user_signed_in? %>
+    <li><%= link_to "ツイートする", new_tweet_path, class: "new_tweet" %>
     <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "destroy" %></li>
     <li><%= link_to "マイページ", "#" %></li>
    <% else %>
