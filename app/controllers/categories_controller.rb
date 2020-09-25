@@ -1,9 +1,6 @@
 class CategoriesController < ApplicationController
-  # def index
-  #   @categories = Category.all
-  # end
   
-
+  
   def create
     if @category = Category.new(category_params)
       @category.save
