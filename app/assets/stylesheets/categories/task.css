@@ -1,11 +1,26 @@
 .task-lists {
-  margin-left: 80px;
+  /* margin-left: 80px; */
+}
+
+.task-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .task-list li {
+  display: flex;
+  margin-left: 18px;
   margin-bottom: 13px;
   font-size: 25px;
 }
+
+.task-list a {
+  font-size: 15px;
+  margin-right: 25px;
+  color: black;
+}
+
 .task-contents form {
   display: flex;
 }
