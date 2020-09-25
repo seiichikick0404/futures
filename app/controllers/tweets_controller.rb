@@ -2,8 +2,9 @@ class TweetsController < ApplicationController
   before_action :move_to_sign_in, except: [:index]
 
   def index
-
-    @categories = current_user.categories.all
+    if user_signed_in?
+      @categories = current_user.categories.all
+    end
     @category = Category.new
   end
 
