@@ -3,5 +3,5 @@ class Category < ApplicationRecord
   belongs_to :user
 
   # バリデーション
-  varidates :task, presence: true
+  validates :task, presence: true
 end

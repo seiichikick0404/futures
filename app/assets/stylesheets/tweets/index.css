@@ -14,6 +14,7 @@
   justify-content: space-around;
   align-items: center;
 }
+
 .user-info {
   display: flex;
 }
@@ -28,6 +29,11 @@
 .left-stack {
   height: 200px;
   width: 100%;
+}
+
+.left-task-contents {
+  display: flex;
+  justify-content: center;
 }
 
 

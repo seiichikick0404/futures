@@ -6,3 +6,15 @@
   margin-bottom: 13px;
   font-size: 25px;
 }
+.task-contents form {
+  display: flex;
+}
+
+.task-field input {
+  width: 200px;
+}
+
+.task-actions input {
+  width: 50px;
+  margin-left: 10px;
+}

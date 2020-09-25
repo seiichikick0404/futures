@@ -1,11 +1,10 @@
 <%# タスク入力フォーム %>
 <div class="task-contents">
     <%= form_with model: @category, id: 'new_tasks', class: 'new_tasks', local: true do |f| %>
-     <div class="field">
-       <%= f.label :task %>
+     <div class="task-field">
        <%= f.text_field :task %>
      </div>
-     <div class="actions">
+     <div class="task-actions">
        <%= f.submit "+" %>
      </div>
     <% end %>
