@@ -57,3 +57,26 @@ has_many :categories
 has_many :comments
 has_many :categories
 belongs_to :user
+
+## categoriesテーブル
+
+| Column    | Type        | Options                        | 
+| --------- | ----------- | ------------------------------ | 
+| task      | text        | null: false                    | 
+| hour_time | float       | null: false                    | 
+| user_id   | references  | null: false, foreign_key: true | 
+
+## アソシエーション
+belongs_to :user
+has_many :tweet_category
+
+
+## tweet_categoryテーブル
+| Column      | Type        | Options                        | 
+| ----------- | ----------- | ------------------------------ | 
+| tweet_id    | references  | null: false, foreign_key: true | 
+| category_id | references  | null: false, foreign_key: true | 
+
+## アソシエーション
+belongs_to :tweet
+belongs_to :category
