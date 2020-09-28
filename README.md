@@ -56,7 +56,9 @@ has_many :categories
 ## アソシエーション
 has_many :comments
 has_many :categories
+has_many :tweet_category
 belongs_to :user
+
 
 ## categoriesテーブル
 
@@ -69,6 +71,7 @@ belongs_to :user
 ## アソシエーション
 belongs_to :user
 has_many :tweet_category
+has_one :study_record
 
 
 ## tweet_categoryテーブル
@@ -79,4 +82,14 @@ has_many :tweet_category
 
 ## アソシエーション
 belongs_to :tweet
+belongs_to :category
+
+## study_recordテーブル
+| Column      | Type       | Options                        | 
+| ----------- | ---------- | ------------------------------ | 
+| hour_time   | float      | null: false                    | 
+| category_id | references | null: false, foreign_key: true | 
+|             |            |                                | 
+
+## アソシエーション
 belongs_to :category
