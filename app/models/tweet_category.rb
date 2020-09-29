@@ -5,7 +5,9 @@ class TweetCategory
   
 
   def save
+    # 学習記録を保存
     study_record = Study_record.create(hour_time: hour_time, category_id: category.id)
+    # ツイートを保存
     Tweet.create(text: text, user_id: user_id)
   end
 end

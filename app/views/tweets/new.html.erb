@@ -9,7 +9,7 @@
           <%= form.collection_select(:category_id, @categories, :id, :task, {prompt: "タスクを選択して下さい"}, {} ) %>
           <%= form.text_area :hour_time, placeholder: "小数点第一位まで可！", class: "time_area" %>
           <%= form.text_area :text, placeholder: "text", rows: "10" %>
-          <%= form.submit "SEND" %>
+          <%= form.submit "ツイート" %>
         <% end %>
       </div>
     </div>
