@@ -1,0 +1,13 @@
+.container select {
+  width: 40%;
+  padding: 6px;
+  margin-top: 10px;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+  font-family: "游ゴシック", "YuGothic";
+}
+
+.time_area {
+  height: 40px;
+  margin-top: 12px;
+}
