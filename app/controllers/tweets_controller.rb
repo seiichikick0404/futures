@@ -2,6 +2,7 @@ class TweetsController < ApplicationController
   before_action :move_to_sign_in, except: [:index]
 
   def index
+    @tweets = Tweet.all
     if user_signed_in?
       @categories = current_user.categories.all
     end
@@ -15,9 +16,8 @@ class TweetsController < ApplicationController
 
   def create
     @tweet_category = TweetCategory.new(tweet_category_params)
-      if tweet_category.invalid?
-        @tweet_category.save
-        redirect_to index
+      if @tweet_category.save
+        redirect_to  controller: :tweets, action: :index
       else 
         render action: :new
       end

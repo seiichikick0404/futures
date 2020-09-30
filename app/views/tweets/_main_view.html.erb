@@ -16,4 +16,16 @@
 </div>
 
 <div class="top-contents">
+  <div class="tweets-contents">
+    <% @tweets.each do |tweet| %>
+      <ul class="tweets-list">
+        <li><%= tweet.user.nickname %>
+        <% if tweet.category.present? %>
+        <li><%= tweet.category.task %>
+        <% end %>
+        <li><%=  %></li>
+        <li><%= tweet.text %></li>
+      </ul>
+    <% end %>
+  </div>
 </div>

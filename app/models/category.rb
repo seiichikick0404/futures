@@ -1,8 +1,8 @@
 class Category < ApplicationRecord
   # アソシエーション
   belongs_to :user
-  has_many :tweets, through: :tweet_categories
-  has_many :tweet_categories
+  has_many :tweets
+  has_one :study_record, dependent: :destroy
   # バリデーション
   validates :task, presence: true
 end

@@ -4,7 +4,7 @@
     </div>
     <div class="contents-row">
       <div class="container">
-        <%= form_with(model: @tweet_category, url: new_tweet_path, local: true) do |form| %>
+        <%= form_with(model: @tweet_category, url: tweets_path, local: true) do |form| %>
           <h3>投稿する</h3>
           <%= form.collection_select(:category_id, @categories, :id, :task, {prompt: "タスクを選択して下さい"}, {} ) %>
           <%= form.text_area :hour_time, placeholder: "小数点第一位まで可！", class: "time_area" %>

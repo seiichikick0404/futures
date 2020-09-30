@@ -28,15 +28,6 @@ ActiveRecord::Schema.define(version: 2020_09_28_060221) do
     t.index ["category_id"], name: "index_study_records_on_category_id"
   end
 
-  create_table "tweet_categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "tweet_id", null: false
-    t.bigint "category_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["category_id"], name: "index_tweet_categories_on_category_id"
-    t.index ["tweet_id"], name: "index_tweet_categories_on_tweet_id"
-  end
-
   create_table "tweets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "text", null: false
     t.bigint "user_id", null: false
@@ -60,7 +51,5 @@ ActiveRecord::Schema.define(version: 2020_09_28_060221) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "study_records", "categories"
-  add_foreign_key "tweets", "categories"
   add_foreign_key "tweets", "users"
 end
