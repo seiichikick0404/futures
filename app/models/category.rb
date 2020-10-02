@@ -1,5 +1,4 @@
 class Category < ApplicationRecord
-  # paranoiaの適用
   acts_as_paranoid
   # アソシエーション
   belongs_to :user

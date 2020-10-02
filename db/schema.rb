@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_30_105630) do
+ActiveRecord::Schema.define(version: 2020_10_01_031834) do
 
   create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "task", null: false
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 2020_09_30_105630) do
   create_table "tweets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "text", null: false
     t.bigint "user_id", null: false
-    t.bigint "category_id", null: false
+    t.bigint "category_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["category_id"], name: "index_tweets_on_category_id"
@@ -53,5 +53,6 @@ ActiveRecord::Schema.define(version: 2020_09_30_105630) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "tweets", "categories", on_delete: :nullify
   add_foreign_key "tweets", "users"
 end

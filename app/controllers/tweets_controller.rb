@@ -3,6 +3,7 @@ class TweetsController < ApplicationController
 
   def index
     @tweets = Tweet.all
+    # @tweets = Tweet.with_deleted
     if user_signed_in?
       @categories = current_user.categories.all
     end

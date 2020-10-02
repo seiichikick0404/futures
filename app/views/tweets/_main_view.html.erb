@@ -15,16 +15,25 @@
   </div>
 </div>
 
+<div class="center-box">
+  <div class="home-logo">
+    <p class="home-text">ホーム</p>
+  </div>
+  <div class="home-icon">
+    <p class="home-dezine">icon</p>
+  </div>
+</div>
+
 <div class="top-contents">
   <div class="tweets-contents">
     <% @tweets.each do |tweet| %>
       <ul class="tweets-list">
-        <li><%= tweet.user.nickname %>
+        <li class="user-name"><%= tweet.user.nickname %></li>
         <% if tweet.category.present? %>
-        <li><%= tweet.category.task %>
+        <li class="user-task"><%= tweet.category.task %></li>
         <% end %>
-        <li><%=  %></li>
-        <li><%= tweet.text %></li>
+        <li><%  %></li>
+        <li><%= simple_format(tweet.text) %></li>
       </ul>
     <% end %>
   </div>
