@@ -11,12 +11,13 @@ class TweetsController < ApplicationController
   end
 
   def new
-    @tweet_category = TweetCategory.new
+    @tweet_category = Tweet.new
     @categories = current_user.categories.all
   end
 
   def create
-    @tweet_category = TweetCategory.new(tweet_category_params)
+    # binding.pry
+    @tweet_category = Tweet.new(tweet_category_params)
       if @tweet_category.save
         redirect_to  controller: :tweets, action: :index
       else 
@@ -31,7 +32,7 @@ class TweetsController < ApplicationController
   end
   private
   def tweet_category_params
-    params.require(:tweet_category).permit(:text, :hour_time, :category_id).merge(user_id: current_user.id)
+    params.require(:tweet).permit(:text, :hour_time, :category_id).merge(user_id: current_user.id)
   end
   
 end

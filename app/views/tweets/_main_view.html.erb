@@ -29,10 +29,8 @@
     <% @tweets.each do |tweet| %>
       <ul class="tweets-list">
         <li class="user-name"><%= tweet.user.nickname %></li>
-        <% if tweet.category.present? %>
         <li class="user-task"><%= tweet.category.task %></li>
-        <% end %>
-        <li><%  %></li>
+        <li class="study_time"><%= tweet.hour_time %></li>
         <li><%= simple_format(tweet.text) %></li>
       </ul>
     <% end %>
