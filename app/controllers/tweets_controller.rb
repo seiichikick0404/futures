@@ -2,8 +2,9 @@ class TweetsController < ApplicationController
   before_action :move_to_sign_in, except: [:index]
 
   def index
-    @tweets = Tweet.all
-    # @tweets = Tweet.with_deleted
+    @study_user = Tweet.where(user_id: current_user.id)
+    @study_hour = @study_user.sum(:hour_time)            # ログイン中のユーザーの総学習時間を取得
+    @tweets = Tweet.all                                  # ツイートの取得
     if user_signed_in?
       @categories = current_user.categories.all
     end
