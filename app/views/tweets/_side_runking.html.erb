@@ -1,0 +1,7 @@
+  <div class="runking_view">
+    <div class="best_user">
+      <% @user_runking.each_with_index do |user,i| %>
+        <p class="runking-list"><%= "#{i+1}位 #{user.nickname}" %></p>
+      <% end %>
+    </div>
+  </div>
