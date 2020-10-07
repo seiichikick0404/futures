@@ -1,13 +1,15 @@
   <div class="runking_contents">
     
       <div class="runking-best-contents">
-        <%# <div class="best-info">
-          <p class="runking-info">積み上げランキング</p>
-        </div> %>
+        <form method="get" action="#" class="search_container">
+          <input type="text" size="25" placeholder="　キーワード検索">
+          <input type="submit" value="検索">
+        </form>
+      </div>
         <div class="best_user">
           <div class="box-title">積み上げランキング</div>
           <% @user_runking.each_with_index do |user,i| %>
-            <p class="runking-list"><%= "#{i+1}位 #{user.nickname}" %></p>
+            <p class="runking-list"><span><%= "#{i+1}位 #{user.nickname}" %></span></p>
           <% end %>
         </div>
           <ul class="follow-me">

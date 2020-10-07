@@ -28,10 +28,13 @@
   <div class="tweets-contents">
     <% @tweets.each do |tweet| %>
       <ul class="tweets-list">
-        <li class="user-name"><%= tweet.user.nickname %></li>
-        <li class="user-task"><%= tweet.category.task %></li>
-        <li class="study_time"><%= tweet.hour_time %></li>
-        <li><%= simple_format(tweet.text) %></li>
+        <div class="tweet-info">
+          <div class="tweet-top"><li class="user-name"><%= tweet.user.nickname %></li></div>
+          <div class="tweet-top"><li class="create-time"><%= tweet.created_at %></li></div>
+        </div>
+        <li class="user-task">：<%= tweet.category.task %></li>
+        <li class="study_time">：<%= tweet.hour_time %>h</li>
+        <li class="study-text"><%= simple_format(tweet.text) %></li>
       </ul>
     <% end %>
   </div>

@@ -1,10 +1,10 @@
 <div class="task-lists">
   <% if user_signed_in? %>
     <% @categories.each do |category| %>
-      <ul class="task-list">
+      <ol class="task-list">
         <li><%= category.task %></li>
         <li><%= link_to '削除', category_path(category.id), method: :delete, class:'category-destroy' %></li> 
-      </ul>
+      </ol>
     <% end %>
   <% end %>
 </div>
