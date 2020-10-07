@@ -14,6 +14,10 @@
   font-size: 25px;
 }
 
+ol.task-list:hover {
+    color : #30a2c5;  
+}
+
 .task-list a {
   font-size: 15px;
   margin-right: 25px;
@@ -31,5 +35,4 @@
 .task-actions input {
   width: 50px;
   margin-left: 10px;
-} */
-
+} 

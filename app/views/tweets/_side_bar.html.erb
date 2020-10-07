@@ -6,14 +6,19 @@
   </ul>
   <% end %>
 </div>
-  
-<div class="left-stack">
-  <%= render "tweets/study_record" %>
-</div>
+<div class="left-main">
+  <div class="left-stack">
+    <%= render "tweets/study_record" %>
+  </div>
 
-<div class="left-task-contents">
-  <%= render "categories/new" %>
-</div>
-<div class="left-task-lists">
-  <%= render partial: 'categories/index' %>
+  <div class="left-task-contents">
+    <%= render "categories/new" %>
+  </div>
+  <div class="left-task-lists">
+    <%= render partial: 'categories/index' %>
+  </div>
+
+  <div class="design-btn">
+    <a href="/tweets/new" class="btn-square-little-rich">ツイートする</a>
+  </div>
 </div>

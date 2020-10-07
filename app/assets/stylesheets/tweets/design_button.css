@@ -1,0 +1,25 @@
+.design-btn {
+  position: absolute;
+  top: 520px;
+  left: 35px;
+}
+
+.btn-square-little-rich {
+  position: relative;
+  display: inline-block;
+  padding: 1em 4em;
+  text-decoration: none;
+  color: #FFF;
+  background: #03A9F4;/*色*/
+  border: solid 1px #0f9ada;/*線色*/
+  border-radius: 20px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+.btn-square-little-rich:active {
+  /*押したとき*/
+  border: solid 1px #03A9F4;
+  box-shadow: none;
+  text-shadow: none;
+}
