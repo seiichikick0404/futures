@@ -3,20 +3,16 @@
 </head>
 <div class="top-header">
   <h1 class="header-title">futures</h1>
-  <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "destroy" %></li>
-  <ul class="header-lists hidden" id="pull-down">
+  <ul class="header-list">
    <% if user_signed_in? %>
-    <li><%= link_to "ツイートする", new_tweet_path, class: "new_tweet" %>
-    <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "destroy" %></li>
-    <li><%= link_to "マイページ", "#" %></li>
+    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "destroy" %></li>
+    <%= link_to "マイページ", "#" %>
    <% else %>
     <li><%= link_to "新規登録", new_user_registration_path, class: "signup" %></li>
     <li><%= link_to "ログイン", new_user_session_path, class: "signin" %></li>
    <% end %>
   </ul>
-   
-  <div class="lists-menu" id="lists">menu
-  </div>
+  
 </div>
 
 <div class="center-box">

@@ -114,22 +114,15 @@ p.time:after {
   font-weight: bold;
 }
 
-.header-lists {
-  background-color: #FAFAFA;
-  width: 150px;
-  position: absolute;
-  top: 80px;
-  left: 700px;
-  padding: 20px;
+.header-list {
+  margin-right: 15px;
 }
 
-.header-lists li {
-  margin-bottom: 10px;
+
+.header-list a {
+  color: #000000;
 }
 
-.header-lists a {
-  color: black;
-}
 
 .center-box {
   height: 60px;
