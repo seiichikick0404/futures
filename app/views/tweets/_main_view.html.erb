@@ -2,6 +2,7 @@
   <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
 </head>
 <div class="top-header">
+  <i class="far fa-paper-plane fa-3x"></i>
   <h1 class="header-title">futures</h1>
   <ul class="header-list">
    <% if user_signed_in? %>
@@ -17,6 +18,7 @@
 
 <div class="center-box">
   <div class="home-logo">
+    <p><i class="fas fa-home fa-2x"></i></p>
     <p class="home-text">ホーム</p>
   </div>
   <div class="home-icon">
@@ -35,7 +37,7 @@
         </div>
         <li class="user-task"><i class="fas fa-book-reader"></i>：<%= tweet.category.task %></li>
         <li class="study_time"><i class="fas fa-stopwatch"></i>：<%= tweet.hour_time %>h</li>
-        <li class="study-text"><%= simple_format(tweet.text) %></li>
+        <li class="study-text"><i class="fas fa-comments"></i><%= simple_format(tweet.text) %></li>
       </ul>
     <% end %>
   </div>
