@@ -1,7 +1,4 @@
-<%= render "tweets/sub_header" %>
-<div class="all-contents">
-    <div class="sign-left-bar">
-    </div>
+<div class="new-tweet">
     <div class="contents-row">
       <div class="container">
         <%= form_with(model: @tweet_category, url: tweets_path, local: true) do |form| %>
@@ -12,7 +9,5 @@
           <%= form.submit "ツイート" %>
         <% end %>
       </div>
-    </div>
-    <div class="sign-right-bar">
     </div>
 </div>

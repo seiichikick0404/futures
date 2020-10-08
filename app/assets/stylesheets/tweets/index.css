@@ -2,17 +2,19 @@
   display: flex;
   height: 100%;
   width: 100%;
-  z-index: 1;
+  
   
   
 }
 .side-view {
-  /* position: fixed;
-  top: 0px;  */
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 100vh;
   width: 300px;
   border-right: solid 1px #000000;
   background-color: #D3C9C6;
+  z-index: 1;
   
 }
 
@@ -82,6 +84,7 @@ p.time:after {
   background-color: #ffffff;
   height: 100vh;
   width: calc(100% - 600px);
+  margin: auto;
   
 }
 
@@ -89,6 +92,7 @@ p.time:after {
   position: sticky;
   top: 0px;
   height: 100px;
+  width: 100%;
   background-color: #D3C9C6;
   display: flex;
   justify-content: space-between;
@@ -132,7 +136,6 @@ p.time:after {
   height: 60px;
   border-bottom: solid 15px #ebf0ef;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
-  /* background-color: #BAB2AF; */
 }
 
 .home-text {
@@ -173,10 +176,12 @@ li.study-text {
 .user-task {
   margin-bottom: 10px;
 }
-div.runking-view {
+.runking-view {
   position: fixed;
   top: 0px;
   right: 0px;
+  height: 100vh;
+  width: 300px;
 }
 
 .runking_contents {
