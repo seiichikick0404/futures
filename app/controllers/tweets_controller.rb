@@ -5,7 +5,7 @@ class TweetsController < ApplicationController
     @study_user = Tweet.where(user_id: current_user.id)  # ログイン中のユーザーの取得
     @study_hour = @study_user.sum(:hour_time)            # ログイン中のユーザーの総学習時間を取得
     @user_runking = User.joins(:tweets).select('users.*, tweets.text').group("id").order("count(tweets.user_id) DESC")
-    @tweets = Tweet.all                                  # ツイートの取得
+    @tweets = Tweet.includes(:user).order("created_at DESC")                                  # ツイートの取得
     if user_signed_in?
       @categories = current_user.categories.all
     end

@@ -1,5 +1,9 @@
+<head>
+  <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+</head>
 <div class="top-header">
   <h1 class="header-title">futures</h1>
+  <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "destroy" %></li>
   <ul class="header-lists hidden" id="pull-down">
    <% if user_signed_in? %>
     <li><%= link_to "ツイートする", new_tweet_path, class: "new_tweet" %>
@@ -20,7 +24,7 @@
     <p class="home-text">ホーム</p>
   </div>
   <div class="home-icon">
-    <p class="home-dezine">icon</p>
+    <i class="fa fa-spinner fa-2x"></i>
   </div>
 </div>
 
@@ -31,9 +35,10 @@
         <div class="tweet-info">
           <div class="tweet-top"><li class="user-name"><%= tweet.user.nickname %></li></div>
           <div class="tweet-top"><li class="create-time"><%= l tweet.created_at %></li></div>
+          <div class="tweet-icon"><i class="fas fa-angle-down"></i></div>
         </div>
-        <li class="user-task">task：<%= tweet.category.task %></li>
-        <li class="study_time">time：<%= tweet.hour_time %>h</li>
+        <li class="user-task"><i class="fas fa-book-reader"></i>：<%= tweet.category.task %></li>
+        <li class="study_time"><i class="fas fa-stopwatch"></i>：<%= tweet.hour_time %>h</li>
         <li class="study-text"><%= simple_format(tweet.text) %></li>
       </ul>
     <% end %>
