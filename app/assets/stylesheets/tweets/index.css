@@ -52,7 +52,7 @@ div.left-header {
 }
 
 .all_time {
-  /* margin-top: 20px; */
+  margin-top: 10px;
 }
 
 p.study-log {
@@ -65,24 +65,20 @@ p.time {
   font-size: 35px;
   position: relative;
   padding: 0.25em 0;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: bold;
   color: #272621;
   font-family: meiryo;
   text-shadow: 6px 6px 2px rgba(62, 63, 55, 0.35);
 }
 
-p.time:after {
-  /* content: "";
-  display: block;
-  height: 4px;
-  background: -webkit-linear-gradient(to right, #5fc2f5, transparent);
-  background: linear-gradient(to right, #5fc2f5, transparent); */
-}
-
 .left-task-contents {
   display: flex;
   justify-content: center;
+}
+
+.fa-caret-right {
+  margin-right: 3px;
 }
 
 
@@ -167,7 +163,7 @@ p.time:after {
 
 
 .top-contents {
-  background-color: white;
+  background-color: #FAFAFA;
   
 }
 

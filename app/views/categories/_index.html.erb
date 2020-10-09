@@ -2,7 +2,7 @@
   <% if user_signed_in? %>
     <% @categories.each do |category| %>
       <ol class="task-list">
-        <li><%= category.task %></li>
+        <li><i class="fa fa-caret-right"></i><%= category.task %></li>
         <li><%= link_to '削除', category_path(category.id), method: :delete, class:'category-destroy' %></li> 
       </ol>
     <% end %>
