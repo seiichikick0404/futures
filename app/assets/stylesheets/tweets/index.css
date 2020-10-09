@@ -65,14 +65,19 @@ p.time {
   font-size: 35px;
   position: relative;
   padding: 0.25em 0;
+  font-size: 26px;
+  font-weight: bold;
+  color: #272621;
+  font-family: meiryo;
+  text-shadow: 6px 6px 2px rgba(62, 63, 55, 0.35);
 }
 
 p.time:after {
-  content: "";
+  /* content: "";
   display: block;
   height: 4px;
   background: -webkit-linear-gradient(to right, #5fc2f5, transparent);
-  background: linear-gradient(to right, #5fc2f5, transparent);
+  background: linear-gradient(to right, #5fc2f5, transparent); */
 }
 
 .left-task-contents {
@@ -100,7 +105,7 @@ p.time:after {
   justify-content: space-between;
   align-items: center;
   border-bottom: solid 1px #000000;
-  position: relative;
+  z-index: 1;
 }
 
 .header-title {
@@ -194,6 +199,11 @@ p.study-text {
 }
 .user-task {
   margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.study_time {
+  font-weight: bold;
 }
 .runking-view {
   position: fixed;
