@@ -6,7 +6,7 @@ class Tweet < ApplicationRecord
   with_options presence: true do
     validates :text
     validates :hour_time,
-              numericality: { only_integer: true }
+              format: { with: /\A[0-9]+(\.[0-9]+)?\z/}
     validates :category_id
   end
     # 一つ目の選択「--」の時は保存できないようにする
