@@ -4,5 +4,10 @@ class Category < ApplicationRecord
   belongs_to :user
   has_many :tweets
   # バリデーション
-  validates :task, presence: true
+  with_options presence: true do
+    validates :task,
+              length: { maximum: 10 } 
+  end
+   
+  
 end
