@@ -6,15 +6,15 @@
   display: flex;
   justify-content: center;
   height: 100vh;
-  width: calc(100% - 600px);
+  width: 100%;
 }
 
 .container {
   margin-top: 90px;
   margin: 20px 0;
   padding: 30px;
-  height: calc(100% - 200px);
-  width: calc(100% - 200px);
+  height: 60%;
+  width: 50%;
   box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
   background-color: rgba(89, 165, 201, 0.5);
   box-sizing: border-box;
@@ -282,5 +282,9 @@ svg {
 
 /* 新規登録画面レスポンシブ */
 @media screen and (max-width:599px) {
-  
+  .container {
+    margin-top: 100px;
+    width: 500px;
+    height: 550px;
+  }
 }

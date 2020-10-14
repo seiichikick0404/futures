@@ -94,7 +94,14 @@ ol.task-list {
     width: 30px;
   }
 
-  
+  /* 投稿画面レスポンシブ */
+ .container-two {
+   margin-top: 10px;
+ }
+
+ .container-two select {
+   width: 70%;
+ }
 
   
 

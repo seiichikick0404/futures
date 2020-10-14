@@ -39,9 +39,12 @@ div.registration-link {
 
 
   div.registration-link {
-    margin-right: 100px;
     position: absolute;
     top: 350px;
-    left: 150px;
+    left: 50px;
+  }
+
+  .top-return {
+    margin-left: 30%;
   }
 }
