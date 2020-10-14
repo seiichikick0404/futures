@@ -5,6 +5,7 @@
 
 .wrapper {
   display: flex;
+  flex-wrap: wrap;
   height: 100%;
   width: 100%;
 }
@@ -257,9 +258,4 @@ p.study-text {
 
 .hidden {
   display: none;
-}
-
-/* スマホ表示時 */
-@media (max-width: 599px) {
-
 }

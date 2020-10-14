@@ -279,3 +279,8 @@ svg {
     transform: translateX(-1000px);
   }
 }
+
+/* 新規登録画面レスポンシブ */
+@media screen and (max-width:599px) {
+  
+}

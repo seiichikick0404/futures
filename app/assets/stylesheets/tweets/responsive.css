@@ -1,0 +1,102 @@
+/* スマホ表示時 */
+@media screen and (max-width:599px) {
+
+  .wrapper {
+  }
+  .side-view {
+    width: 32%;
+  }
+
+  p.study-log {
+    font-size: 5px;
+  }
+
+  p.time {
+    margin-left: 2px;
+    font-size: 22px;
+  }
+
+  input#category_task {
+    width: 115px;
+    height: 40px;
+  }
+
+  div.left-task-contents {
+    width: 177px;
+  }
+
+  .left-task-contents input {
+    width: 45px;
+    height: 45px;
+  }
+ol.task-list {
+  width: 200px;
+}
+
+.task-list li {
+  margin-left: 3px;
+  font-size: 18px;
+}
+
+  
+  .main-view {
+    width: 100%;
+  }
+
+  div.top-header {
+    height: 50px;
+  }
+
+  div.left-header {
+    height: 40px;
+  }
+  .user-info {
+    margin-top: 40px;
+    height: 15px;
+  }
+
+  .user-info a {
+    font-size: 14px;
+  }
+
+  .design-btn {
+    position: absolute;
+    top: 500px;
+    left: 10px;
+    
+  }
+
+  .header-title {
+    font-size: 30px;
+  }
+
+  .fa-paper-plane {
+    font-size: 80px;
+  }
+
+  div.left-header {
+    height: 90px;
+  }
+  
+  .runking-view {
+    display: none;
+  }
+
+  form.search_container {
+    margin-top: 35px;
+    display: flex;
+  }
+
+  .search_container input[type="text"]{
+    width: 150px;
+    border: none;
+    height: 30px; 
+    width: 30px;
+  }
+
+  
+
+  
+
+   
+}

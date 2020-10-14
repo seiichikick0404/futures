@@ -10,16 +10,38 @@
   margin-top: 50px;
   padding: 30px;
   height: 520px;
-  width: calc(100% - 750px);
+  width: 700px;
   background-color: #FAFAFA;
-
-
+  position: relative;
 }
 
 div.registration-link {
-  margin-left: 200px;
-  margin-top: 50px;
+  position: absolute;
+  top: 300px;
+  left: 200px;
 }
 .registration-link a {
   color: black;
+}
+/* ログインフォームのレスポンシブ画面 */
+@media screen and (max-width:599px) {
+  div.contents-row-two {
+    height: 100%;
+    width: 100%;
+    background-color: #FAFAFA;
+    position: relative;
+  }
+
+  .container-two {
+    height: 500px;
+    margin-top: 100px;
+  }
+
+
+  div.registration-link {
+    margin-right: 100px;
+    position: absolute;
+    top: 350px;
+    left: 150px;
+  }
 }

@@ -1,0 +1,42 @@
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  right: -340px;
+  overflow: hidden;
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  transition: left .5s, right .5s;
+  background-color: rgba(86, 86, 86, .7);
+}
+
+.toggle {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  text-decoration: underline;
+}
+
+#open {
+  display: none;
+}
+
+#open:checked + #menu {
+  right: 0;
+}
