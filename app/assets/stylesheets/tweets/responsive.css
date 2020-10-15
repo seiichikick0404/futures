@@ -4,7 +4,7 @@
   .wrapper {
   }
   .side-view {
-    width: 32%;
+    display: none;
   }
 
   p.study-log {
@@ -43,8 +43,15 @@ ol.task-list {
     width: 100%;
   }
 
+
   div.top-header {
-    height: 50px;
+    height: 60px;
+  }
+  h1.header-title {
+    display: none;
+  }
+  .fa-crown {
+   margin-left: -60px;
   }
 
   div.left-header {

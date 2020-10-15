@@ -17,7 +17,7 @@ a {
   top: 0;
   right: -340px;
   overflow: hidden;
-  width: 300px;
+  width: 250px;
   height: 100%;
   padding: 20px;
   transition: left .5s, right .5s;
@@ -40,3 +40,4 @@ a {
 #open:checked + #menu {
   right: 0;
 }
+
