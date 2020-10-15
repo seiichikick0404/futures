@@ -8,6 +8,9 @@
 ## futures URL
 
 ### https://futures-04.herokuapp.com/
+<p>テストアカウント<p>
+<p>Email:test3@33333<p>
+<p>password :test333<p>
 
 ## 使い方 ユーザー登録
 <p align="center">
