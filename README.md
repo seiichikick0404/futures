@@ -6,9 +6,8 @@
 </p>
 
 ## futures URL
-<p align="center">
-  <a href="https://futures-04.herokuapp.com/"><img src="https://〜.png" width="80px;" /></a>
-  <br>
+
+### https://futures-04.herokuapp.com/
 
 ## 使い方 ユーザー登録
 <p align="center">
@@ -27,5 +26,5 @@
 
 ## ランキング機能
 <p align="center">
-  <img src="![9f12eb5a28fd7f5a65c3bfc51979212a](https://user-images.githubusercontent.com/69625901/96106859-a7921d00-0f16-11eb-9fd6-f3603d462186.gif)" width=70%> 
+  <img src="https://user-images.githubusercontent.com/69625901/96106859-a7921d00-0f16-11eb-9fd6-f3603d462186.gif" width=70%> 
 </p>
