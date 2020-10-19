@@ -37,13 +37,55 @@
    <% if user_signed_in? %>
     <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "destroy" %></li>
     <%= link_to "マイページ", "#" %>
-    
-    
    <% else %>
     <li><%= link_to "新規登録", new_user_registration_path, class: "signup" %></li>
     <li><%= link_to "ログイン", new_user_session_path, class: "signin" %></li>
    <% end %>
   </ul>
+
+  <label class="toggles" for="opens"><i class="fas fa-user-circle" aria-hidden="true"></i>
+    </label>
+    <input id="opens" type="checkbox">
+    <div id="menus">
+      <nav>
+          <% if user_signed_in? %>
+          <ul class="user-info">
+            <li><%= link_to current_user.nickname, "#", class: "user-nickname" %> </li>
+            <li>画像</li>
+          </ul>
+          <% end %>
+          <div class="record-view">
+            <div class="all_time">
+              <p class="study-log">あなたの総学習時間は、、、</p>
+              <p class="time"><%= @study_hour %>時間です<p>
+            </div>
+          </div>
+          <div class="task-contents">
+            <%= form_with model: @category, id: 'new_tasks', class: 'new_tasks', local: true do |f| %>
+              <div class="task-field">
+                <%= f.text_field :task %>
+              </div>
+              <div class="task-actions">
+                <%= f.submit "+" %>
+              </div>
+            <% end %>
+          </div>
+          <div class="task-lists">
+            <% if user_signed_in? %>
+              <% @categories.each do |category| %>
+                <ol class="task-list">
+                  <li><i class="fa fa-caret-right"></i><%= category.task %></li>
+                  <li><%= link_to '削除', category_path(category.id), method: :delete, class:'category-destroy' %></li> 
+                </ol>
+              <% end %>
+            <% end %>
+          </div>
+          <div class="design-btn">
+            <a href="/tweets/new" class="btn-square-little-rich">積み上げる</a>
+          </div>
+      </nav>
+    </div>
+
   
 </div>
 
