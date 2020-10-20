@@ -113,6 +113,30 @@ p.time {
   left: 70px;
 }
 
+.toggle {
+  display: none;
+}
+
+.toggles {
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+#menus {
+  display: none;
+} 
+
+input#open {
+  display: none;
+}
+
+input#opens {
+  display: none;
+}
+
 .fa-paper-plane {
   color: #3189b6;
 }

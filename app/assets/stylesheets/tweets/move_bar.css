@@ -1,87 +1,93 @@
-ul {
-  margin: 0;
-  padding-left: 0;
-}
+@media screen and (max-width:599px) {
+  ul {
+    margin: 0;
+    padding-left: 0;
+  }
 
-li {
-  list-style: none;
-}
+  li {
+    list-style: none;
+  }
 
-a {
-  text-decoration: none;
-  color: #fff;
-}
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
 
-#menu {
-  position: fixed;
-  top: 0;
-  right: -340px;
-  overflow: hidden;
-  width: 300px;
-  height: 100%;
-  padding: 20px;
-  transition: left .5s, right .5s;
-  background-color: rgba(86, 86, 86, .7);
-}
+  #menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -340px;
+    overflow: hidden;
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    transition: left .5s, right .5s;
+    background-color: rgba(86, 86, 86, .7);
+  }
 
-.toggle {
-  font-size: 30px;
-  cursor: pointer;
-}
+  .toggle {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
 
-.toggle:hover {
-  text-decoration: underline;
-}
+  .toggle:hover {
+    text-decoration: underline;
+  }
 
-#open {
-  display: none;
-}
+  #open {
+    display: none;
+  }
 
-#open:checked + #menu {
-  right: 0;
-}
+  #open:checked + #menu {
+    right: 0;
+  }
 
-/* 左サイドバーのスライド時の挙動 */
-ul {
-  margin: 0;
-  padding-left: 0;
-}
+  /* 左サイドバーのスライド時の挙動 */
+  ul {
+    margin: 0;
+    padding-left: 0;
+  }
 
-li {
-  list-style: none;
-}
+  li {
+    list-style: none;
+  }
 
-a {
-  text-decoration: none;
-  color: #fff;
-}
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
 
-#menus {
-  position: fixed;
-  top: 0;
-  left: -340px;
-  overflow: hidden;
-  width: 280px;
-  height: 100%;
-  padding: 20px;
-  transition: right .5s, left .5s;
-  background-color: rgba(86, 86, 86, .7);
-}
+  #menus {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -340px;
+    overflow: hidden;
+    width: 280px;
+    height: 100%;
+    padding: 20px;
+    transition: right .5s, left .5s;
+    background-color: rgba(86, 86, 86, .7);
+  }
+  
+  .toggles {
+    margin-right: 13px;
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
 
-.toggles {
-  font-size: 30px;
-  cursor: pointer;
-}
+  .toggles:hover {
+    text-decoration: underline;
+  }
 
-.toggles:hover {
-  text-decoration: underline;
-}
+  #opens {
+    display: none;
+  }
 
-#opens {
-  display: none;
+  #opens:checked + #menus {
+    left: 0;
+  }
 }
-
-#opens:checked + #menus {
-  left: 0;
-}
-
