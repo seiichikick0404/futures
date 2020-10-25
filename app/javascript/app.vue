@@ -1,3 +1,4 @@
+Vue.config.devtools = true;
 <template>
   <div id="app">
     <p>{{ message }}</p>
