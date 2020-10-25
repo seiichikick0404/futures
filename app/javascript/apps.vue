@@ -18,7 +18,7 @@ export default {
 p {
   font-size: 2em;
   text-align: center;
-  color: blue;
+  color: green;
   
 }
 </style>
