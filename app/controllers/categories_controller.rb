@@ -12,7 +12,7 @@ class CategoriesController < ApplicationController
 
   def destroy
     if @category.destroy
-      redirect_to controller: :tweets, action: :index
+      render :json => @categories
     else
       render template: 'tweets/index'
     end
