@@ -1,5 +1,6 @@
 
-.task-lists ol {
+.task-lists ul {
+  list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,7 +12,7 @@
 }
 
 
-ol.task-lists:hover {
+ul.task-lists:hover {
     color : #30a2c5;  
 }
 
