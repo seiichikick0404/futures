@@ -11,11 +11,7 @@ class CategoriesController < ApplicationController
   end
 
   def destroy
-    if @category.destroy
-      render :json => @categories
-    else
-      render template: 'tweets/index'
-    end
+     @category.destroy
   end
 
   private

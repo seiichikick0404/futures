@@ -1,1 +1,4 @@
-$('.task-lists-<%= @category.id %>').remove();
+
+(function(){
+  document.querySelector("#category-<%= @category.id %>").remove()
+})();
