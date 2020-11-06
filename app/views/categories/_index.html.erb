@@ -1,9 +1,9 @@
 <div class="task-lists">
   <% if user_signed_in? %>
     <% @categories.each do |category| %>
-      <ol class="task-list">
-        <li><i class="fa fa-caret-right"></i><%= category.task %></li>
-        <li><%= link_to '削除', category_path(category.id), method: :delete, class:'category-destroy' %></li> 
+      <ol class="task-lists" id="category-<%= category.id %>">
+        <li class="task"><i class="fa fa-caret-right"></i><%= category.task %></li>
+        <li><%= link_to '削除', category_path(category.id), method: :delete, remote: true, class:'category-destroy' %></li> 
       </ol>
     <% end %>
   <% end %>
