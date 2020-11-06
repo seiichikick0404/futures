@@ -32,6 +32,12 @@
   <img src="https://user-images.githubusercontent.com/69625901/96106859-a7921d00-0f16-11eb-9fd6-f3603d462186.gif" width=70%> 
 </p>
 
+## レスポンシブ対応
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/69625901/98334794-085cd300-2047-11eb-927e-81b99367fb4c.gif" width=70%> 
+</p>
+
+
 ## 開発概要
 ・ローカル環境<br>
 ・Git-hub<br>
