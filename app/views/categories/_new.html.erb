@@ -1,6 +1,6 @@
 <%# タスク入力フォーム %>
 <div class="task-contents">
-    <%= form_with model: @category, id: 'new_tasks', class: 'new_tasks', local: true do |f| %>
+    <%= form_with model: @category, id: 'new_tasks', class: 'new_tasks' do |f| %>
      <div class="task-field">
        <%= f.text_field :task %>
      </div>
