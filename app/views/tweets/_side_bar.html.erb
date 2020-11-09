@@ -15,7 +15,7 @@
     <%= render "categories/new" %>
   </div>
   <div class="left-task-lists">
-    <%= render partial: 'categories/index' %>
+    <%= render 'categories/index', categories: @categories%>
   </div>
 
   <div class="design-btn">
