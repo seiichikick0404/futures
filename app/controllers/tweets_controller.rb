@@ -12,11 +12,6 @@ class TweetsController < ApplicationController
     @category = Category.new
   end
 
-  def new
-    @tweet_category = Tweet.new
-    @categories = current_user.categories.all
-  end
-
   def create
     @tweet_category = Tweet.new(tweet_category_params)
       if @tweet_category.save
