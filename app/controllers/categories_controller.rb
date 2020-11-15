@@ -2,12 +2,9 @@ class CategoriesController < ApplicationController
   before_action :set_category, only: [:destroy]
   
   def create
-    if @category = Category.new(category_params)
+      @category = Category.new(category_params)
       @category.save
-      redirect_to  controller: :tweets, action: :index
-    else 
-      render template: 'tweets/index'
-    end
+      @categories = current_user.categories.all
   end
 
   def destroy
