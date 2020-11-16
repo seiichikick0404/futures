@@ -7,7 +7,7 @@ class TweetsController < ApplicationController
     @user_runking = User.joins(:tweets).select('users.*, tweets.text').group("id").order("count(tweets.user_id) DESC").limit(5)
     @tweets = Tweet.includes(:user).order("created_at DESC")                                  # ツイートの取得
     if user_signed_in?
-      @categories = current_user.categories.all
+      @categories = current_user.categories
     end
     @category = Category.new
   end

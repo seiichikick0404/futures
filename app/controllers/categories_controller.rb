@@ -4,7 +4,7 @@ class CategoriesController < ApplicationController
   def create
       @category = Category.new(category_params)
       @category.save
-      @categories = current_user.categories.all
+      @categories = current_user.categories
   end
 
   def destroy
