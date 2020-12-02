@@ -8,8 +8,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
 
-with_options presence: true do
-  validates :nickname, length: { maximum: 6 }
-  validates :password, length: { minimum: 6 },
-                       format: { with: /\A(?=.*?[a-z])[a-z\d]{6,32}+\z/ }
+  with_options presence: true do
+    validates :nickname, length: { maximum: 6 }
+    validates :password, length: { minimum: 6 },
+                        format: { with: /\A(?=.*?[a-z])[a-z\d]{6,32}+\z/ }
+  end
 end
