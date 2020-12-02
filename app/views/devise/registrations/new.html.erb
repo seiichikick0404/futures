@@ -56,12 +56,12 @@ S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715
 <div class="all-contents">
     <div class="sign-left-bar">
     </div>
-
     <div class="contents-row">
       <div class="container">
         <h2>Sign up</h2>
         <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
-          <%= devise_error_messages! %>
+        <%# インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
+        <%= render 'devise/shared/error_messages', model: f.object %>
 
           <div class="field">
             <%= f.label :nickname %>
