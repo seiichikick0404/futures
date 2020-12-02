@@ -57,6 +57,7 @@ gem 'pry-rails'
 gem 'paranoia'
 gem "jquery-rails"
 gem 'rspec-rails', '~> 4.0.0'
+gem 'factory_bot_rails'
 
 group :production do
   gem 'rails_12factor'
