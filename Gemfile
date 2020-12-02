@@ -56,6 +56,7 @@ gem 'devise'
 gem 'pry-rails'
 gem 'paranoia'
 gem "jquery-rails"
+gem 'rspec-rails', '~> 4.0.0'
 
 group :production do
   gem 'rails_12factor'
