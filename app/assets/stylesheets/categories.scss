@@ -4,6 +4,7 @@
 $cWhite: white;
 $cBlack: black;
 $cBorder: rgb(235, 238, 240);
+$cUser: #6396af;
 
 .body {
   box-sizing: border-box;
@@ -28,7 +29,7 @@ $cBorder: rgb(235, 238, 240);
   height: 100vh;
   width: 300px;
   border-right: solid 1px $cBorder;
-  border-color: rgb(235, 238, 240);
+  border-color: $cBorder;
   z-index: 1;
   background-color: $cWhite;
 
@@ -47,7 +48,7 @@ $cBorder: rgb(235, 238, 240);
       display: flex;
       list-style: none;
       font-size: 35px;
-      color: #6396af;
+      color: $cUser;
 
       & a {
         margin-right: 40px;
@@ -182,7 +183,40 @@ $cBorder: rgb(235, 238, 240);
     & .tweets-contents {
 
       & .tweets-list {
+        
 
+        & p {
+  
+        }
+
+        & .user-name {
+          top: -2px;
+          left: 58px;
+        }
+
+        & .tweet-top {
+          top: -29px;
+          left: 3px;
+        }
+        
+        & .user-task {
+          top: -28px;
+          left: 58px;
+        }
+
+        & .study_time {
+          top: -23px;
+          left: 58px;
+        }
+
+        & .study-text {
+          top: -20px;
+          left: 58px;
+        }
+        & .fa-user-circle {
+          font-size: 46px;
+          color: $cUser;
+        }
          & .fa-book-reader {
            color: #25b6f7;
          }

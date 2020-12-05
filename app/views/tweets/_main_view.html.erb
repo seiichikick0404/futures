@@ -102,6 +102,9 @@
   <div class="tweets-contents">
     <% @tweets.each do |tweet| %>
       <ul class="tweets-list">
+        <p>
+          <i class="fas fa-user-circle"></i>
+        </p>
         <div class="tweet-info">
           <div class="tweet-top"><li class="user-name"><%= tweet.user.nickname %></li></div>
           <div class="tweet-top"><li class="create-time"><%= l tweet.created_at %></li></div>
