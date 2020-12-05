@@ -1,14 +1,6 @@
 
-.user-info {
-  display: flex;
-  list-style: none;
-}
-
 .user-info a {
-  margin-right: 100px;
-  color: black;
-  font-size: 23px;
-  font-weight: bold;
+  
 }
 
 .fa-caret-right {
@@ -56,17 +48,6 @@ input#opens {
 
 .header-list a {
   color: #000000;
-}
-
-
-.center-box {
-  height: 60px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: solid 15px #ebf0ef;
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
 }
 
 .home-logo {

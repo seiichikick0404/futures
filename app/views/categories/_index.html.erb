@@ -3,7 +3,11 @@
     <% @categories.each do |category| %>
       <ul class="task-lists" id="category-<%= category.id %>">
         <li class="task"><i class="fa fa-caret-right"></i><%= category.task %></li>
-        <li><%= link_to '削除', category_path(category.id), method: :delete, remote: true, class:'category-destroy' %></li> 
+        <li>
+          <%= link_to category_path(category.id), method: :delete, remote: true, class:'category-destroy' do %>
+            <i class="far fa-trash-alt"></i>
+          <% end %>
+        </li> 
       </ul>
     <% end %>
   <% end %>
