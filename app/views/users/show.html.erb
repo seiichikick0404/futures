@@ -12,12 +12,22 @@
           <p><i class="fas fa-user-circle"></i></p>
           <p class="profile-name"><%= @user.nickname %></p>
         </div>
+        <div class="user-profile-separator">
+        </div>
         <div class="user-profile-item">
-          <p class="profile-item"><%= @tweets_count %></p>
+          <div class="user-item-container">
+            <i class="fas fa-book"></i>
+            <p class="profile-item"><%= @tweets_count %></p>
+          </div>
           <p>総積み上げ数</p>
         </div>
+        <div class="user-profile-separator">
+        </div>
         <div class="user-profile-time">
-          <p class="profile-time"><%= @user_tweets %></p>
+          <div class="user-time-container">
+            <i class="fas fa-medal"></i>
+            <p class="profile-time"><%= @user_tweets %></p>
+          </div>
           <p>学習時間</p>
         </div>
       </div>
