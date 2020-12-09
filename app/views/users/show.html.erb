@@ -4,6 +4,16 @@
 
 <div class="profile-allcontainer">
   <div class="profile-header">
+
+    <p class="profile-header-title">
+      <i class="far fa-paper-plane"></i>
+      <%= link_to "futures", root_path %>
+    </p>
+    <ul class="profile-header-list">
+      <li><%= link_to "ホーム", root_path %><li>
+      <li><%= link_to "積み上げる", new_tweet_path %><li>
+      <li><%= link_to "ログアウト", destroy_user_session_path %></li>
+    </ul>
   </div>
   <div class="profile-container">
     <div class="profile-box">
