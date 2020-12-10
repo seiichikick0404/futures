@@ -58,11 +58,16 @@ $cUser: #6396af;
 
     & .profile-box {
       width: 45%;
-      height: 70%;
+      height: 85%;
       background-color: $cWhite;
       box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      overflow: scroll;
+      margin-left: -130px;
 
       & .profile-record {
+        // position: fixed;
+        // top: 0;
+        // left: 0;
         width: 100%;
         height: 116px;
         background-color: $cWhite;
@@ -109,7 +114,6 @@ $cUser: #6396af;
               margin-top: 15px;
             }
           }
-          
         }
 
         & .user-profile-time {
@@ -128,9 +132,13 @@ $cUser: #6396af;
               font-size: 28px;
               letter-spacing: .04em;
             }
+          }
+        }
+        & .top-contents {
+
+          & .tweets-list {
 
           }
-          
         }
       }
 

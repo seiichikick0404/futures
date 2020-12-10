@@ -41,6 +41,25 @@
           <p>学習時間</p>
         </div>
       </div>
+      <div class="top-contents">
+        <div class="tweets-contents">
+          <% @tweets.each do |tweet| %>
+            <ul class="tweets-list">
+              <p>
+                <i class="fas fa-user-circle"></i>
+              </p>
+              <div class="tweet-info">
+                <div class="tweet-top"><li class="user-name"><%= tweet.user.nickname %></li></div>
+                <div class="tweet-top"><li class="create-time"><%= l tweet.created_at %></li></div>
+                <div class="tweet-icon"><i class="fas fa-angle-down"></i></div>
+              </div>
+              <li class="user-task"><i class="fas fa-book-reader"></i>：<%= tweet.category.task %></li>
+              <li class="study_time"><i class="fas fa-stopwatch"></i>：<%= tweet.hour_time %>h</li>
+              <li class="study-text"><i class="fas fa-comments"></i><%= simple_format(tweet.text) %></li>
+            </ul>
+          <% end %>
+        </div>
+      </div>
     </div>
     <div class="chart-box">
     </div>
