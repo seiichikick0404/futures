@@ -62,6 +62,8 @@
       </div>
     </div>
     <div class="chart-box">
+      <%= column_chart @tweets.group_by_day_of_week(:created_at, format: "%a").sum(:hour_time), width: "500px", height: "300px" %>
+      
     </div>
   </div>
 </div>
