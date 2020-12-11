@@ -59,6 +59,8 @@ gem 'pry-rails'
 gem 'paranoia'
 gem "jquery-rails"
 gem 'rails-i18n'
+gem 'chartkick'
+gem 'groupdate'
 
 group :production do
   gem 'rails_12factor'
