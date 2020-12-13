@@ -183,7 +183,9 @@ $cUser: #6396af;
     & .tweets-contents {
 
       & .tweets-list {
-        
+        border-bottom: solid 1px rgb(235, 238, 240);
+        padding: 20px;
+        list-style: none;
 
         & p {
   

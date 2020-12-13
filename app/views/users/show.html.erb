@@ -61,6 +61,7 @@
         </div>
       </div>
     </div>
+    <i class="far fa-calendar-alt"></i>
     <p class="chart-title">積み上げカレンダー</p>
     <div class="chart-box">
       <%= column_chart @tweets.group_by_day(:created_at, format: "%a").sum(:hour_time),xtitle: "Day", ytitle: "Time", width: "535px", height: "400px" %>

@@ -142,6 +142,7 @@ $cBorder: rgb(235, 238, 240);
           & .tweets-list {
             background-color: $cWhite;
             border-bottom: solid 1px $cBorder;
+            padding: 10px;
           }
         }
       }
@@ -156,10 +157,17 @@ $cBorder: rgb(235, 238, 240);
     }   
   }
 }
+.fa-calendar-alt {
+  position: absolute;
+  top: 146px;
+  left: 810px;
+  font-size: 27px;
+  color: #15aabf;
+}
 .chart-title {
   position: absolute;
   top: 150px;
-  left: 810px;
+  left: 840px;
   color: #2b546a;
   font-size: 20px;
 }
