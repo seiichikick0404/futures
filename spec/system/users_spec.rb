@@ -22,6 +22,8 @@ RSpec.describe "Users", type: :system do
       expect(current_path).to eq root_path
     end
   end
+end
+  
   context 'ユーザー新規登録ができないとき' do
     it '誤った情報ではユーザー新規登録ができずに新規登録ページへ戻ってくる' do
       # 新規登録ページへ移動する
@@ -39,4 +41,35 @@ RSpec.describe "Users", type: :system do
       expect(current_path).to eq "/users"
     end
   end
-end
+
+  RSpec.describe 'ログイン', type: :system do
+    before do
+      @user = FactoryBot.create(:user)
+    end
+    context 'ログインができるとき' do
+      it '保存されているユーザーの情報と合致すればログインができる' do
+        # ログインページへ遷移する
+        visit new_user_session_path
+        # 正しいユーザー情報を入力する
+        fill_in 'Email', with: @user.email
+        fill_in 'Password', with: @user.password
+        # ログインボタンを押す
+        find('input[name="commit"]').click
+        # トップページへ遷移することを確認する
+        expect(current_path).to eq root_path
+      end
+    end
+    context 'ログインができないとき' do
+      it '保存されているユーザーの情報と合致しないとログインができない' do
+        # ログインページへ遷移する
+        visit new_user_session_path
+        # ユーザー情報を入力する
+        fill_in 'Email', with: ""
+        fill_in 'Password', with: ""
+        # ログインボタンを押す
+        find('input[name="commit"]').click
+        # ログインページへ戻されることを確認する
+        expect(current_path).to eq new_user_session_path
+      end
+    end
+  end
