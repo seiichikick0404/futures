@@ -39,6 +39,7 @@ $cBorder: rgb(235, 238, 240);
 
     & .profile-header-list {
       display: flex;
+      list-style: none;
 
       & a {
         text-decoration: none;
