@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :tweet do
+    id                    {'1'}
     hour_time             {'3'}
     text                  {"今日はたくさん勉強しました"}
-    category_id           {'1'}
     association :user
     association :category
   end
