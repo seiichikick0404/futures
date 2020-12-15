@@ -18,11 +18,6 @@ RSpec.describe 'タスク投稿', type: :system do
       find('input[name="commit"]').click
       # 投稿完了ページに遷移することを確認する
       expect(current_path).to eq root_path
-      # expect(current_path).to eq root_path
-      # 「投稿が完了しました」の文字があることを確認する
-      # トップページに遷移する
-      # トップページには先ほど投稿した内容のツイートが存在することを確認する（画像）
-      # トップページには先ほど投稿した内容のツイートが存在することを確認する（テキスト）
     end
   end
 end
