@@ -88,6 +88,15 @@ $cBackGround: #FAFAFA;
 
           & .task-list li{
             font-size: 23px;
+            margin-left: 14px;
+          }
+
+          & a.category-destroy {
+            font-size: 17px;
+            margin-right: 25px;
+            color: black;
+            top: -24px;
+            left: 219px;
           }
         }
 
