@@ -1,0 +1,176 @@
+/* スマホ表示時 */
+@media screen and (max-width:599px) {
+$cBlack: black;
+$cBackGround: #FAFAFA;
+
+  .wrapper {
+    // サイドバー
+    & .side-view {
+      display: none;
+
+      
+    }
+    // メインビュー
+    & .main-view {
+      width: 100%;
+
+      & div.top-header {
+        height: 60px;
+        width: 100%;
+
+        & .user-info {
+          background-color: $cBackGround;
+          border-radius: 15px;
+          padding: 10px;
+          margin-top: 9px;
+          display: flex;
+          justify-content: space-around;
+
+          & .user-nickname {
+            color: $cBlack;
+            font-weight: bold;
+          }
+        }
+
+        & .all_time { 
+          background-color: $cBackGround;
+          padding: 20px 10px;
+          margin-top: 30px;
+          border-radius: 10px;
+
+          & p.time {
+            margin-top: 20px;
+            margin-left: 7px;
+            font-size: 30px;
+          }
+        }
+      
+
+        & ul.header-list {
+          margin-right: -50px;
+        }
+
+        & .fa-paper-plane {
+          font-size: 30px;
+        }
+
+        & .fa-crown {
+          font-size: 28px;
+          margin-left: -44px;
+          margin-bottom: 3px;
+        }
+
+        & h1.header-title {
+          display: none;
+        }
+        
+        & input#category_task {
+          position: absolute;
+          top: 80px;
+          left: -6px;
+        }
+        & div.task-actions {
+          position: absolute;
+          top: 80px;
+          left: 193px;
+        }
+        & div.task-lists {
+          background-color: $cBackGround;
+          border-radius: 20px;
+          width: 265px;
+          margin-right: 100px;
+          padding: 30px 0;
+          position: absolute;
+          top: 380px;
+          left: -14px;
+          
+          
+
+          & .task-list li{
+            font-size: 23px;
+          }
+        }
+
+        & .design-btn {
+          position: absolute;
+          top: 650px;
+          left: 10px; 
+        }      
+      }
+      & .top-contents {
+
+        & .tweets-list {
+          
+
+          & li.user-task {
+            width: 100%;
+            top: -13px;
+            left: 15px;
+          }
+
+          & .study_time {
+            top: -4px;
+            left: 16px;
+          }
+
+          & li.study-text {
+            top: -4px;
+            left: 16px;
+            width: 100%;
+            position: relative;
+  
+            & p {
+              padding-right: 0;
+            }
+          }
+        }   
+      }
+    }
+  }
+  
+
+  
+  
+
+  
+
+
+  
+  .header-title {
+    font-size: 30px;
+  }
+
+  .fa-paper-plane {
+    font-size: 80px;
+  }
+
+  div.left-header {
+    height: 90px;
+  }
+  
+  .runking-view {
+    display: none;
+  }
+
+  form.search_container {
+    margin-top: 35px;
+    display: flex;
+  }
+
+  .search_container input[type="text"]{
+    width: 150px;
+    border: none;
+    height: 30px; 
+    width: 30px;
+  }
+
+  /* 投稿画面レスポンシブ */
+ div.container-two {
+   height: 812px;
+ }
+
+ .container-two select {
+   width: 70%;
+ }
+
+}

@@ -55,7 +55,7 @@
             </div>
           </div>
           <div class="task-contents">
-            <%= form_with model: @category, id: 'new_tasks', class: 'new_tasks', local: true do |f| %>
+            <%= form_with model: @category, id: 'new_tasks', class: 'new_tasks' do |f| %>
               <div class="task-field">
                 <%= f.text_field :task %>
               </div>
@@ -69,7 +69,11 @@
               <% @categories.each do |category| %>
                 <ol class="task-list">
                   <li><i class="fa fa-caret-right"></i><%= category.task %></li>
-                  <li><%= link_to '削除', category_path(category.id), method: :delete, class:'category-destroy' %></li> 
+                  <li>
+                    <%= link_to category_path(category.id), method: :delete, remote: true, class:'category-destroy' do %>
+                      <i class="far fa-trash-alt"></i>
+                    <% end %>
+                  </li>
                 </ol>
               <% end %>
             <% end %>
