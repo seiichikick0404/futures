@@ -1,5 +1,6 @@
 <head>
   <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
 <div class="profile-allcontainer">
@@ -38,7 +39,7 @@
             <i class="fas fa-medal"></i>
             <p class="profile-time"><%= @user_tweets %></p>
           </div>
-          <p>学習時間</p>
+          <p class="stydy-title">学習時間</p>
         </div>
       </div>
       <div class="top-contents">
@@ -64,7 +65,13 @@
     <i class="far fa-calendar-alt"></i>
     <p class="chart-title">積み上げカレンダー</p>
     <div class="chart-box">
-      <%= column_chart @tweets.group_by_day_of_week(:created_at, format: "%a").sum(:hour_time),xtitle: "Day", ytitle: "Time", width: "535px", height: "400px" %>
+      <%= column_chart @tweets.group_by_day_of_week(:created_at, format: "%a").sum(:hour_time),xtitle: "Day", ytitle: "Time",width: "530px", height: "400px" %>
+    </div>
+    <div class="chart-box-responsive">
+      <%= column_chart @tweets.group_by_day_of_week(:created_at, format: "%a").sum(:hour_time),xtitle: "Day", ytitle: "Time",width: "330px", height: "300px" %>
     </div>
   </div>
 </div>
+<style>
+  html,body{background-color:#edf2fa;}
+</style>
