@@ -85,6 +85,10 @@ $cUser: #6396af;
 
         & .task {
           font-size: 85%;
+
+          & .fa-caret-right {
+            margin-right: 3px;
+          }
         }
 
         & .category-destroy {
@@ -159,6 +163,7 @@ $cUser: #6396af;
     }
 
     & .header-list {
+      margin-right: 15px;
 
       & a {
         font-size: 92%;
@@ -177,24 +182,44 @@ $cUser: #6396af;
     align-items: center;
     border-bottom: solid 15px #ebf0ef;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+
+    & .home-logo {
+      display: flex;
+
+      & .fa-home {
+        margin-top: 5px;
+      }
+
+      & .home-text {
+        font-weight: bold;
+        margin-top: 15px;
+        margin-left: 5px;
+      }
+    }
   }
 
   & .top-contents {
+    background-color: #FAFAFA; 
 
     & .tweets-contents {
+      width: 100%;
 
       & .tweets-list {
         border-bottom: solid 1px rgb(235, 238, 240);
         padding: 20px;
         list-style: none;
 
-        & p {
-  
+        & .tweet-info {
+          display: flex;
+          justify-content: space-between;
         }
 
         & .user-name {
           top: -2px;
           left: 58px;
+          font-family: 'Noto Sans JP', sans-serif;
+          font-weight: bold;
+          margin-bottom: 10px;
         }
 
         & .tweet-top {
@@ -205,14 +230,19 @@ $cUser: #6396af;
         & .user-task {
           top: -28px;
           left: 58px;
+          margin-bottom: 10px;
+          font-weight: bold;
         }
 
         & .study_time {
+          font-weight: bold;
           top: -23px;
           left: 58px;
         }
 
         & .study-text {
+          line-height: 140%;
+          margin-top: 10px;
           top: -20px;
           left: 58px;
           width: 100%;
@@ -255,6 +285,7 @@ $cUser: #6396af;
     width: 300px;
     border-left: solid 1px #000000;
     border-color: $cBorder;
+    margin-top: 23px;
 
     & .runking-best-contents {
       margin: 23px 15px;
@@ -272,5 +303,101 @@ $cUser: #6396af;
         font-size: 16px;
       } 
     }
+
+    & .best_user {
+      width: 250px;
+      margin: 2em 0;
+      margin-top: 105px;
+      background: #f1f1f1;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+
+      & p {
+        font-size: 20px;
+        padding: 17px 25px;
+        margin: 0;
+        color: black;/*文字色*/
+        /*線の種類（点線）2px 線色*/
+        border-bottom: dashed 2px #6594e0;
+      }
+
+      & .box-title {
+        font-size: 1.2em;
+        background: #5fc2f5;
+        padding: 4px;
+        text-align: center;
+        color: #FFF;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+      }
+    }
   }
+}
+// レスポンシブ時の右サイドバー
+.toggle {
+  display: none;
+}
+
+.toggles {
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+#menus {
+  display: none;
+} 
+
+input#open {
+  display: none;
+}
+
+input#opens {
+  display: none;
+}
+
+.fa-paper-plane {
+  color: #3189b6;
+}
+
+.lists-menu {
+  margin-right: 25px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+
+.best_user .box-title {
+  font-size: 1.2em;
+    background: #5fc2f5;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.best_user p {
+  font-size: 20px;
+  padding: 17px 25px;
+  margin: 0;
+  color: black;/*文字色*/
+  /*線の種類（点線）2px 線色*/
+  border-bottom: dashed 2px #6594e0;
+}
+.runking-best-contents {
+  margin-top: 23px;
+}
+
+.best_user {
+  width: 250px;
+  margin: 2em 0;
+  margin-top: 105px;
+  background: #f1f1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+}
+
+.hidden {
+  display: none;
 }
