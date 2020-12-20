@@ -1,3 +1,4 @@
+/* レスポンシブ時のサイドバー */
 @media screen and (max-width:599px) {
   ul {
     margin: 0;
