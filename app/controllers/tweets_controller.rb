@@ -4,7 +4,14 @@ class TweetsController < ApplicationController
   def index
     @study_user = Tweet.where(user_id: current_user.id)  # ログイン中のユーザーの取得
     @study_hour = @study_user.sum(:hour_time)            # ログイン中のユーザーの総学習時間を取得
-    @user_runking = User.joins(:tweets).select('users.*, tweets.text').group("id").order("count(tweets.user_id) DESC").limit(5)
+    # @user_runking = User.joins(:tweets).select('users.*, tweets.text').group("id").order("count(tweets.user_id) DESC").limit(5)
+    query = "SELECT users.`nickname`, SUM(tweets.`hour_time`) 
+             FROM tweets
+             JOIN users
+             ON tweets.user_id = users.id
+             GROUP BY users.`nickname`
+             LIMIT 5"
+    @user_runking = Tweet.find_by_sql(query)
     @tweets = Tweet.includes(:user).order("created_at DESC")                                  # ツイートの取得
     if user_signed_in?
       @categories = current_user.categories
