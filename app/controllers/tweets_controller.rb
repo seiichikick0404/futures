@@ -12,7 +12,7 @@ class TweetsController < ApplicationController
              GROUP BY users.`nickname`
              LIMIT 5"
     @user_runking = Tweet.find_by_sql(query)               #学習時間が多いトップ５取得
-    @tweets = Tweet.includes(:user).order("created_at DESC")                                  # ツイートの取得
+    @tweets = Tweet.includes(:user).order("created_at DESC").page(params[:page]).per(10)                                  # ツイートの取得
     if user_signed_in?
       @categories = current_user.categories
     end
