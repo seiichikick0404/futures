@@ -61,6 +61,7 @@ gem "jquery-rails"
 gem 'rails-i18n'
 gem 'chartkick'
 gem 'groupdate'
+gem 'kaminari'
 
 group :production do
   gem 'rails_12factor'
