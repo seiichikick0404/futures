@@ -332,6 +332,76 @@ $cUser: #6396af;
     }
   }
 }
+// ページ数バーの非表示
+nav.pagination {
+  display: none;
+}
+
+.jscroll-added {
+
+  & .tweets-list {
+    border-bottom: solid 1px rgb(235, 238, 240);
+    padding: 20px;
+    list-style: none;
+
+    & .tweet-info {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    & .user-name {
+      top: -2px;
+      left: 58px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    & .tweet-top {
+      top: -29px;
+      left: 3px;
+    }
+    
+    & .user-task {
+      top: -28px;
+      left: 58px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    & .study_time {
+      font-weight: bold;
+      top: -23px;
+      left: 58px;
+    }
+
+    & .study-text {
+      line-height: 140%;
+      margin-top: 10px;
+      top: -20px;
+      left: 58px;
+      width: 100%;
+      position: relative;
+
+      & p {
+        padding-right: 50px;
+      }
+    }
+    & .fa-user-circle {
+      font-size: 46px;
+      color: $cUser;
+    }
+     & .fa-book-reader {
+       color: #25b6f7;
+     }
+
+     & .fa-stopwatch {
+       color: #339edc;
+     }
+  }
+}
+
+
 // レスポンシブ時の右サイドバー
 .toggle {
   display: none;

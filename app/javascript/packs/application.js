@@ -11,6 +11,9 @@ require("@rails/activestorage").start()
 require("channels")
 require("chartkick")
 require("chart.js")
+require("jquery")
+require("jquery.jscroll.min.js")
+require("scroll.js")
 
 
 
