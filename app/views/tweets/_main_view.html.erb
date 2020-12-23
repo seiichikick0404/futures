@@ -1,7 +1,10 @@
 <head>
   <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
-  <script src="//unpkg.com/jscroll/dist/jquery.jscroll.min.js"></script>
+  
+  <%# <script src="//unpkg.com/jscroll/dist/jquery.jscroll.min.js"></script> %>
+  <%# <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> %>
 </head>
+
 <div class="top-header">
   <i class="far fa-paper-plane fa-2x"></i>
   <h1 class="header-title">futures</h1>
@@ -95,8 +98,9 @@
   </div>
 </div>
 <div class="top-contents">
-  <div class="tweets-contents">
-    <% @tweets.each do |tweet| %>
+  <div class="jscroll">
+    <div class="tweets-contents">
+      <% @tweets.each do |tweet| %>
       <ul class="tweets-list">
         <p>
           <i class="fas fa-user-circle"></i>
@@ -106,10 +110,12 @@
           <div class="tweet-top"><li class="create-time"><%= l tweet.created_at %></li></div>
           <div class="tweet-icon"><i class="fas fa-angle-down"></i></div>
         </div>
-        <li class="user-task"><i class="fas fa-book-reader"></i>：<%= tweet.category.task %></li>
-        <li class="study_time"><i class="fas fa-stopwatch"></i>：<%= tweet.hour_time %>h</li>
-        <li class="study-text"><i class="fas fa-comments"></i><%= simple_format(tweet.text) %></li>
+          <li class="user-task"><i class="fas fa-book-reader"></i>：<%= tweet.category.task %></li>
+          <li class="study_time"><i class="fas fa-stopwatch"></i>：<%= tweet.hour_time %>h</li>
+          <li class="study-text"><i class="fas fa-comments"></i><%= simple_format(tweet.text) %></li>
       </ul>
-    <% end %>
+      <% end %>
+     <%= paginate @tweets %>
+    </div>
   </div>
 </div>
